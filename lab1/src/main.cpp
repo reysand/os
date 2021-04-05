@@ -122,5 +122,7 @@ int		main() {
 	getWinVer();
 	getSys();
 	getTime();
+	cerr << "Press any key to continue . . .";
+	_getch();
 	return 0;
 }

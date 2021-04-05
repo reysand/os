@@ -20,6 +20,7 @@ void	getHandleAndFNameOrName() {
 	char	input[MAX_PATH];
 	char	buf[MAX_PATH];
 
+	cout << "Input module: ";
 	cin.getline(input, MAX_PATH);
 	cout << "Handle: ";
 	LoadLibrary(input);
@@ -99,5 +100,7 @@ int		main() {
 	getProcessInfo();
 	cout << endl;
 	getSnapshot();
+	cerr << "Press any key to continue . . .";
+	_getch();
 	return 0;
 }
