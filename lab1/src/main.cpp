@@ -1,3 +1,4 @@
+#include <conio.h>
 #include <iostream>
 #include <windows.h>
 
@@ -122,5 +123,7 @@ int		main() {
 	getWinVer();
 	getSys();
 	getTime();
+	cerr << "Press any key to continue . . .";
+	_getch();
 	return 0;
 }
